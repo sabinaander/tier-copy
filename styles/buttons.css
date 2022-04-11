@@ -1,0 +1,138 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css");
+.roundedButton {
+    border-radius: 3rem;
+    text-decoration: none;
+    padding: .8rem 4.1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.roundedButton a {
+    display: inline-block;
+    transition-duration: 0.2s;
+    position: relative;
+}
+
+button {
+    cursor: inherit;
+}
+
+/* Styles for the animated arrow on some buttons */
+
+.animateWarrow span {
+    position: relative;
+    transition: transform 250ms ease-in-out;
+    display: inline-block;
+}
+
+.animateWarrow span::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f061";
+    position: absolute;
+    top: 2px;
+    right: -25px;
+    opacity: 0;
+    color: inherit;
+    transition: all 200ms ease-in-out 50ms;
+}
+
+.animateWarrow:hover span:before {
+    opacity: 1;
+    transform: translateX(30px);
+}
+
+.animateWarrow:hover span {
+    transform: translateX(-20px);
+}
+
+/* End arrow animation */
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roundedButton.btnTopNav {
+    background-color: var(--clr-teal-blue);
+    color: var(--clr-regular-blue);
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: 0.3s ease-out;
+    transition-property: background-color, color;
+}
+
+/*change color on button on hover*/
+
+.btnTopNav:hover {
+    color: var(--clr-teal-blue);
+    background: var(--clr-regular-blue);
+}
+
+.btnClimateSection {
+    background: var(--clr-dark-blue);
+    color: var(--clr-teal-blue);
+    margin-right: auto;
+    align-items: center;
+}
+
+.btnVideoSection {
+    background: var(--clr-regular-blue);
+    color: white;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.btnRideSection {
+    background: var(--clr-teal-blue);
+    color: white;
+    margin: 0 auto;
+}
+
+.btnBlueSection {
+    background: var(--clr-teal-blue);
+    color: white;
+    margin-right: auto;
+}
+
+.form button {
+    border: transparent;
+    padding: .5rem 3rem;
+    background-color: var(--clr-regular-blue);
+    border-radius: 1rem;
+    color: var(--clr-teal-blue);
+    margin: .5rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s ease-out;
+    transition-property: background-color, color;
+}
+
+/*change color on button on hover*/
+
+.form button:hover {
+    color: var(--clr-regular-blue);
+    background: var(--clr-teal-blue);
+}
+
+.slightlyRoundedButton_std {
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: white;
+    color: var(--clr-regular-blue);
+    padding: 1rem 3rem 1rem 1.44444rem;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    flex-grow: 0;
+    flex-direction: column;
+    width: fit-content;
+}

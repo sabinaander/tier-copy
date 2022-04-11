@@ -1,0 +1,192 @@
+:root {
+    --clr-dark-blue: #00103c;
+    --clr-teal-blue: #69d2aa;
+    --clr-regular-blue: #001c6e;
+    --ff-euclid: 'Euclid Square', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--clr-dark-blue);
+}
+
+/* Base section styles */
+
+.section {
+    padding-inline: 4vmin;
+    padding-top: 5.625rem;
+    padding-bottom: 4.688rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section h2 {
+    font-size: clamp(2rem, 4vw + 1rem, 3.75rem);
+    font-weight: 700;
+    padding-bottom: 5vmin;
+    line-height: 1;
+}
+
+.section p {
+    margin: 1.375rem 0;
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: var(--clr-regular-blue);
+}
+
+.sectionContent {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.whiteSection {
+    background: white;
+    color: var(--clr-dark-blue);
+}
+
+.whiteSection h2 {
+    color: var(--clr-regular-blue);
+}
+
+.blueSection {
+    color: white;
+}
+
+/* Corporate section har an uppercase paragraph */
+
+.blueSection p {
+    text-transform: uppercase;
+    color: white;
+}
+
+/* form/sign-up section section */
+
+.formSection .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form form {
+    font-family: var(--ff-euclid);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+}
+
+.form input[type="email"] {
+    border: none;
+    width: 100%;
+    padding: .5rem;
+    height: 50px;
+    border-radius: .6rem;
+    margin-bottom: 1.3rem;
+}
+
+#checkbox, #checkbox label {
+    margin-left: 0.3rem;
+}
+
+.form label {
+    font-size: 1.375rem;
+    font-weight: bold;
+    margin-left: 0.3rem;
+    padding-right: 5rem;
+}
+
+.form a, .form span {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.form a {
+    text-decoration: underline;
+}
+
+.formSection h2 {
+    /* padding-top: 1rem; */
+    margin-bottom: 2rem;
+    line-height: 1;
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+/* video section */
+
+.videoSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+.videoSection div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 9vmin;
+    margin: auto;
+    max-width: 1400px;
+    padding-left: 3vmin;
+    padding-right: 3vmin;
+    padding-top: 1vmin;
+}
+
+.videoSection h2 {
+    font-size: 7.75rem;
+    color: white;
+    line-height: 1;
+    margin-top: 9vmin;
+    text-shadow: 0px 0px 20px rgb(0 16 60 / 25%);
+}
+
+.videoSection video {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    object-fit: fill;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 1;
+}
+
+/* Ride section with image */
+
+.rideSection {
+    background-image: url(/img/jobs.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rideSection div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.rideSection h2 {
+    color: white;
+    padding-bottom: 4rem;
+    text-align: center;
+}

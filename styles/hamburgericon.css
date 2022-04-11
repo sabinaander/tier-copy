@@ -1,0 +1,71 @@
+/*container for the hamburgermenu*/
+
+.hamburgerMenuBtn {
+    display: inline-block;
+    position: relative;
+    width: 2.0625rem;
+    height: 1.83332875rem;
+    cursor: pointer;
+}
+
+/*creates all lines for hamburgericon*/
+
+.hamburgerIcon {
+    color: var(--clr-teal-blue);
+    background-color: currentColor;
+    height: 0.3055525rem;
+    width: 2.0625rem;
+    position: absolute;
+    top: 50%;
+    border-radius: 1px;
+    margin-top: -0.1527625rem;
+    display: block;
+    transition-duration: .22s;
+    transition-timing-function: cubic-bezier(.55, .055, .675, .19);
+}
+
+/*on click animations*/
+
+/*hides one line and makes a +, spins for X*/
+
+.hamburgerIcon.active {
+    transform: rotate( 225deg);
+    transition-delay: .12s;
+    transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.hamburgerIcon:before {
+    height: 0.3055525rem;
+    width: 2.0625rem;
+    content: '';
+    background-color: currentColor;
+    border-radius: 1px;
+    display: block;
+    position: absolute;
+    top: -0.53472375rem;
+    transition: top .1s ease-in .25s, opacity .1s ease-in;
+}
+
+.hamburgerIcon.active::before {
+    top: 0;
+    opacity: 0;
+    transition: top .1s ease-out, opacity .1s ease-out .12s;
+}
+
+.hamburgerIcon:after {
+    height: 0.3055525rem;
+    border-radius: 1px;
+    width: 2.0625rem;
+    content: '';
+    background-color: currentColor;
+    display: block;
+    position: absolute;
+    bottom: -0.53472375rem;
+    transition: bottom .1s ease-in .25s, transform .22s cubic-bezier(.55, .055, .675, .19);
+}
+
+.hamburgerIcon.active::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom .1s ease-out, transform .22s cubic-bezier(.215, .61, .355, 1) .12s;
+}

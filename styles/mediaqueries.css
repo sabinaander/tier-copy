@@ -1,0 +1,124 @@
+/*tablet size*/
+
+@media only screen and (min-width: 768px) and (max-width: 920px) {
+    .section {
+        padding-top: 3.75rem;
+        padding-bottom: 2.8125rem;
+    }
+    .section p {
+        font-size: 1.25rem;
+    }
+    .heroSection img {
+        height: 65vh;
+        /* width: 100%; */
+    }
+    .formSection h2 {
+        font-size: 2.75rem;
+        padding-inline: 6rem;
+    }
+    .form label {
+        font-size: 1.25rem;
+    }
+    .videoSection div {
+        margin: 1.875rem;
+        padding: 0 0 10vmin 0;
+    }
+    .videoSection h2 {
+        font-size: 5.75rem;
+        line-height: 1;
+        padding: 0 0 10vmin 0;
+    }
+    .btnVideoSection {
+        margin-top: 0;
+    }
+    /*footer*/
+    .langContainer a {
+        padding: 1rem 1.8rem 1rem 1.44444rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+    .langContainer div ul li {
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+}
+
+/*mobile size*/
+
+@media only screen and (max-width: 767px) {
+    .roundedButton.btnTopNav {
+        padding: .7rem 1.2rem;
+    }
+    .logo {
+        width: 7em;
+    }
+    .hamburgerMenuBtn {
+        width: 1em;
+    }
+    picture img {
+        width: 100%;
+    }
+    .roundedButton.btnTopNav {
+        padding: .7rem 1.2rem;
+    }
+    .logo {
+        width: 7em;
+    }
+    .hamburgerMenuBtn {
+        width: 1em;
+    }
+    picture img {
+        width: 100%;
+    }
+    .section {
+        padding-inline: 4vmin;
+        padding-top: 2.8125rem;
+        padding-bottom: 1.875rem;
+    }
+    .section p {
+        font-size: 1.125rem;
+    }
+    .formSection h2 {
+        margin-left: 0;
+        margin-right: auto;
+        font-size: calc(7vw + 1rem);
+        text-align: center;
+    }
+    .form label {
+        font-size: 1.125rem;
+    }
+    .form button {
+        width: 100%;
+    }
+    .paddingBottom {
+        padding-bottom: 4rem;
+    }
+    .videoSection h2 {
+        font-size: 3.375rem;
+        line-height: 1;
+        padding: 0 0 10vmin 0;
+    }
+    .btnVideoSection {
+        margin-top: 0;
+    }
+    /*footer*/
+    .firstLinks ul, .bottomLinks ul {
+        flex-direction: column;
+    }
+    .firstLinks ul a {
+        font-size: 1.5rem;
+    }
+    .langContainer a {
+        padding: 1rem 2rem 1rem 1.44444rem;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+    .langContainer div ul li {
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+    .socialMedia ul li {
+        height: 3.3rem;
+        width: 3.3rem;
+    }
+}
